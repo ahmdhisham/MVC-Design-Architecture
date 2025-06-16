@@ -1,5 +1,5 @@
-from ..model.counter import Counter
-from ..view.counterUI import CounterView
+from model.counter import Counter
+from view.counterUI import CounterView
 
 class CounterController:
     def __init__(self):
