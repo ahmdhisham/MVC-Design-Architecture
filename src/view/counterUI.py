@@ -8,7 +8,6 @@ class CounterView(QWidget):
 
     def __init__(self):
         super().__init__()
-        
         self.setWindowTitle("Counter App")
         self.setFixedSize(400, 180)
         self.layout = QVBoxLayout()
@@ -18,23 +17,29 @@ class CounterView(QWidget):
 
         self.label = QLabel("0")
         self.label.setStyleSheet("""
-                        background-color: #2c4c3b; 
+                        QLabel {
+                        qproperty-alignment: 'AlignCenter';
+                        background-color: #182c25; 
                         padding: 3px; 
                         font-size: 21px; 
                         color: orange;
+                        }
                         """)
+
         self.btn_increment = QPushButton("+")
         self.btn_increment.setStyleSheet("""
                         color: green;
                         background-color: #222222;
                         selection-background-color: blue;
                         """)
+
         self.btn_decrement = QPushButton("-")
         self.btn_decrement.setStyleSheet("""
                         color: red;
                         background-color: #222222;
                         selection-background-color: blue;
                         """)
+
         self.btn_reset = QPushButton("Reset")
         self.btn_reset.setStyleSheet("""
                         color: orange;
