@@ -1,14 +1,16 @@
 import sys
 from PySide6.QtWidgets import QApplication
 from PySide6.QtWidgets import (
-    QWidget, QVBoxLayout, QLabel, QPushButton
+    QWidget, QVBoxLayout, QHBoxLayout ,QLabel, QPushButton
 )
 
 class CounterView(QWidget):
+
     def __init__(self):
         super().__init__()
         self.setWindowTitle("Counter App")
         self.layout = QVBoxLayout()
+        # self.layout = QHBoxLayout
 
         self.label = QLabel("0")
         self.btn_increment = QPushButton("+")
@@ -20,10 +22,3 @@ class CounterView(QWidget):
         self.layout.addWidget(self.btn_decrement)
         self.layout.addWidget(self.btn_reset)
         self.setLayout(self.layout)
-
-
-# if __name__ == "__main__":
-#     app = QApplication(sys.argv)
-#     controller = CounterController()
-#     controller.view.show()
-#     sys.exit(app.exec())
