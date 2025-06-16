@@ -2,6 +2,7 @@ from model.counter import Counter
 from view.counterUI import CounterView
 
 class CounterController:
+
     def __init__(self):
         self.model = Counter()
         self.view = CounterView()
