@@ -12,18 +12,18 @@ class CounterView(QWidget):
         self.setFixedSize(400, 180)
         self.layout = QVBoxLayout()
         self.setStyleSheet("""
-                        background-color: #00FFA0; 
+                        background-color: #00FF90; 
                         """) 
 
         self.label = QLabel("0")
         self.label.setStyleSheet("""
-                        QLabel {
+                        
                         qproperty-alignment: 'AlignCenter';
-                        background-color: #182c25; 
-                        padding: 3px; 
+                        background-color: #182c25;
+                        border-radius: 5px;   /* Corner radius */ 
                         font-size: 21px; 
-                        color: orange;
-                        }
+                        color: white;
+                        
                         """)
 
         self.btn_increment = QPushButton("+")
