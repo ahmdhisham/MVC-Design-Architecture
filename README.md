@@ -1,5 +1,5 @@
 # MVC-Design-Architecture
-Learning design architectures (design patterns) with a simple counter app for better readability and software development.
+Applying architectural design patterns in a simple counter app for better readability and software development for learning purposes.
 
 ## Requirements
 - Python 3.13.2
