@@ -6,7 +6,7 @@ Applying architectural design patterns in a simple counter app for better readab
 
 #### Install Python
 **Remove each "$" from the commands or copy the commands without it; it's only a declaration for using the terminal**
-1) Download python 3.13.2 from the official website of python
+1) Download python 3.13.2 from the official website of python: **https://www.python.org/downloads/release/python-3132/**
 2) Install it and add it to the **System PATH**
 3) Open the terminal from your project dirctory ***or*** head to your IDE terminal and change the working directory to your project directory 
 (e.g. ```PS D:\Ahmed\Projects\MVC-Design-Architecture> ```)
@@ -26,3 +26,6 @@ $ .venv/Scripts/activate.bat
 ```bash
 $ pip install -r requirements.txt
 ```
+
+## Run the Project
+Run **main.py** from your IDE *or* using this command in the terminal **python src/main.py**
